@@ -1,0 +1,130 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "status": {
+      "type": "boolean"
+    },
+    "birthday": {
+      "type": "string"
+    },
+    "skills": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "avatar": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "percent": {
+              "type": "integer"
+            },
+            "size": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            },
+            "uid": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "percent",
+            "size",
+            "status",
+            "type",
+            "uid",
+            "url"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "percent": {
+              "type": "integer"
+            },
+            "size": {
+              "type": "integer"
+            },
+            "status": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            },
+            "uid": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "percent",
+            "size",
+            "status",
+            "type",
+            "uid"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "location": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "location",
+            "status"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "firstName",
+    "lastName",
+    "email",
+    "status",
+    "birthday",
+    "skills",
+    "avatar"
+  ]
+}
